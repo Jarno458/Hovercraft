@@ -17,7 +17,7 @@ namespace Hovercraft.Controllers
 
 		IEnumerable<TooltipLocatorModel> GetTooltip(string website)
 		{
-			if(website.Contains("hovercraft.azurewebsites.net"))
+			if(website.Contains("hovercraft.azurewebsites.net") || website.Contains("localhost"))
 				return GetDummyPageTooltips();
 			if (website.Contains("ospokolenko.wixsite.com/nonsense"))
 				return GetOspokolenkoWixSiteTooltips();
@@ -31,33 +31,35 @@ namespace Hovercraft.Controllers
 			{
 				new TooltipLocatorModel
 				{
-					Locator = @"//td[contains(text(),'Varndagroth Borealis')]",
+					Locator = @"td:contains(""Varndagroth"")",
 					Tooltip = new TooltipModel
 					{
 						IconUrl = "https://www.neoseeker.com/timespinner/File:Timespinner_varndagroth_icon.jpg",
-						Header = "Varndagroth Borealis",
+						Header = "Varndagroth",
 						Lines = new []
 						{
-							"Varndagray Metropolis 84",
-							"382553 XET Vilete",
-							"https://www.neoseeker.com/timespinner/Walkthrough/Boss_Varndagroth"
-
+							"Location: Varndagray Metropolis",
+							"HP: 800",
+							"Exp: 100",
+							"Strong vs: Dark",
+							"Weak vs: Fire, Ice, Light"
 						}
 					}
 				},
 				new TooltipLocatorModel
 				{
-					Locator = @"//td[contains(text(),'Aelana Vilete')]",
+					Locator = @"td:contains(""Aelana"")",
 					Tooltip = new TooltipModel
 					{
 						IconUrl = "https://www.neoseeker.com/timespinner/File:Timespinner_aelana_icon.jpg",
-						Header = "Aelana Vilete",
+						Header = "Aelana",
 						Lines = new []
 						{
-							"Royal Towers 1",
-							"457753 RYL Vilete",
-							"https://www.neoseeker.com/timespinner/Walkthrough/Boss_Aelana"
-
+							"Location: Royal Towers",
+							"HP: 2250",
+							"Exp: 300",
+							"Strong vs: Lightning ",
+							"Weak vs: Aura, Dark"
 						}
 					}
 				}
@@ -70,7 +72,7 @@ namespace Hovercraft.Controllers
 			{
 				new TooltipLocatorModel
 				{
-					Locator = @"//*[@id=""comp-kbj2wv741linkElement""] id=""comp-kbj2wv741label""",
+					Locator = @"#comp-kbj2wv741label",
 					Tooltip = new TooltipModel
 					{
 						Lines = new []
