@@ -1,0 +1,133 @@
+[{
+	"Websites": [ "localhost", "hovercraft.azurewebsites.net" ],
+	"Tooltips": [{
+		"Locator": "td:contains(\"Varndagroth\")",
+		"Tooltip":  {
+			"IconUrl": "https://www.neoseeker.com/timespinner/File:Timespinner_varndagroth_icon.jpg",
+			"Header": "Varndagroth",
+			"Lines": [
+				"Location: Varndagray Metropolis",
+				"HP: 800",
+				"Exp: 100",
+				"Strong vs: Dark",
+				"Weak vs: Fire, Ice, Light"
+			]
+		}
+	}, {
+		"Locator": "td:contains(\"Aelana\")",
+		"Tooltip":  {
+			"IconUrl": "https://cdn.staticneo.com/ew/b/bd/Timespinner_aelana_icon.jpg",
+			"Header": "Aelana",
+			"Lines": [
+				"Location: Royal Towers",
+				"HP: 2250",
+				"Exp: 300",
+				"Strong vs: Lightning ",
+				"Weak vs: Aura, Dark"
+			]
+		}
+	}]
+}, {
+	"Websites": [ "ospokolenko.wixsite.com/nonsense" ],
+	"Tooltips": [{
+		"Locator": "#comp-kbj2wv741label",
+		"Tooltip":  {
+			"Lines": [ "Join the most forward-thinking accountants and let them share the experience" ]
+		}
+	}, {
+		"Locator": "#comp-kbjc9eya0label",
+		"Tooltip":  {
+			"Header": "Home",
+			"Lines": [ "Here you can find out all latest accounting information" ]
+		}
+	}, {
+		"Locator": "#comp-kbjc9eya1linkElement",
+		"Tooltip":  {
+			"Header": "Donation",
+			"Lines": [ "If you feel inspired about our web-site, you are welcome to help us" ]
+		}
+	}, {
+		"Locator": "#comp-kbjc9eya2label",
+		"Tooltip":  {
+			"Header": "About",
+			"Lines": [ "The story about our members" ]
+		}
+	}, {
+		"Locator": "#comp-kbjc9eya3label",
+		"Tooltip":  {
+			"Header": "Blog",
+			"Lines": [ "Join the most forward-thinking accountants and let them share the experience" ]
+		}
+	}, {
+		"Locator": "#comp-kbjc9eya4label",
+		"Tooltip":  {
+			"Header": "Yelp Review",
+			"Lines": [ "Check comments and starts on Yelp" ]
+		}
+	}, {
+		"Locator": "#comp-kbjc9eya5label",
+		"Tooltip":  {
+			"Header": "Knowledge Base",
+			"Lines": [ "Check out the accounting syllabus" ]
+		}
+	}]
+}, {
+	"Websites": [ "accounting.twinfield.com" ],
+	"Tooltips": [{
+		"Locator": "div .flex-list-container div:contains('Irfan Coleman')",
+		"Tooltip":  {
+			"Header": "Irfan Coleman",
+			"Lines": [
+				"Not Here 345",
+				"4626 ;D",
+				"Kiev - Ukraine",
+				"687-628785174",
+				"icoleman@wolterskluwer.com"
+			]
+		}
+	}, {
+		"Locator": "div .flex-list-container div:contains('108.000,00')",
+		"Tooltip":  {
+			"Header": "Articles",
+			"Lines": [ "2x Pet Dragon € 54000,00" ]
+		}
+	}, {
+		"Locator": "div .flex-list-container div:contains('Quentin Weaver')",
+		"Tooltip":  {
+			"Header": "Quentin Weaver",
+			"Lines": [
+				"Australishestraat 8925",
+				"6395 :D",
+				"Amersfoort - Netherlands",
+				"qweaver@wolterskluwer.com"
+			]
+		}
+	}, {
+		"Locator": "div .flex-list-container div:contains('100.000,00')",
+		"Tooltip":  {
+			"Header": "Articles",
+			"Lines": [ "1x WK Code Games Victory € 100000,00" ]
+		}
+	}, {
+		"Locator": "div.flex-list-container div:contains('Leia Mcgregor')",
+		"Tooltip":  {
+			"Header": "Leia Mcgregor",
+			"Lines": [
+				"Somewhere Nearby 40",
+				"3563264 ZIP",
+				"Knowhere - Netherlands",
+				"06-3095783545",
+				"admin@leiamcgregor.com"
+			]
+		}
+	}, {
+		"Locator": "div .flex-list-container div:contains('78.050,00')",
+		"Tooltip":  {
+			"Header": "Articles",
+			"Lines": [
+				"1x Electric Car €78.000,00",
+				"5x Pen 50,00" 
+			]
+		}
+	}]
+}]
