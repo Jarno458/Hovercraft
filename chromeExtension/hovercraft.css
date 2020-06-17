@@ -34,9 +34,7 @@ p {
     position: absolute;
     top: 0;
     left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: 5;
+    z-index: 999999;
 }
 .HovercraftTooltip p {
     min-width: 200px;
@@ -59,8 +57,12 @@ p {
 .HovercraftTooltip p.OnTop {
     top: -5px;
     left: 50%;
-    transform: translate(-50%, -150%);
 }
+/*.HovercraftTooltip p.OnTop {
+    top: -5px;
+    left: 50%;
+    transform: translate(-50%, -150%);
+}*/
 .HovercraftTooltip p.OnTop:before {
     position: absolute;
     content: "";
@@ -124,19 +126,37 @@ p {
     margin-top: -8px;
     left: -8px;
 }
-.HovercraftTooltip:hover p {
+/*.HovercraftTooltip:hover p {*/
+/*    visibility: visible;*/
+/*    opacity: 1;*/
+/*}*/
+/*.HovercraftTooltip:hover p.OnTop {*/
+/*    transform: translate(-50%, -100%);*/
+/*}*/
+/*.HovercraftTooltip:hover p.OnBottom {*/
+/*    transform: translate(-50%, 100%);*/
+/*}*/
+/*.HovercraftTooltip:hover p.OnLeft {*/
+/*    transform: translate(-100%, -50%);*/
+/*}*/
+/*.HovercraftTooltip:hover p.OnRight {*/
+/*    transform: translate(100%, -50%);*/
+/*}*/
+
+.HovercraftTooltip p {
     visibility: visible;
     opacity: 1;
 }
-.HovercraftTooltip:hover p.OnTop {
+/*
+.HovercraftTooltip p.OnTop {
     transform: translate(-50%, -100%);
 }
-.HovercraftTooltip:hover p.OnBottom {
+.HovercraftTooltip p.OnBottom {
     transform: translate(-50%, 100%);
 }
-.HovercraftTooltip:hover p.OnLeft {
+.HovercraftTooltip p.OnLeft {
     transform: translate(-100%, -50%);
 }
-.HovercraftTooltip:hover p.OnRight {
+.HovercraftTooltip p.OnRight {
     transform: translate(100%, -50%);
-}
+}*/
