@@ -1,0 +1,28 @@
+# Thumbnails created by windows
+Thumbs.db
+
+# Files created by Visual Studio
+.vs
+*.aps
+*.cache
+*.ilk
+*.lib
+*.log
+*.ncb
+*.obj
+*.pch
+*.sbr
+*.suo
+*.tlb
+*.tlh
+*.user
+*_i.c
+*_p.c
+*.DotSettings
+obj/
+[Bb]in/
+_ReSharper*/
+
+# Other
+*.bak
+*.tmp
