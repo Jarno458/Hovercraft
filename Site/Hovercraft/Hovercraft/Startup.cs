@@ -1,5 +1,4 @@
-﻿using System.Collections.Generic;
-using Microsoft.AspNetCore.Builder;
+﻿using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
@@ -20,6 +19,18 @@ namespace Hovercraft
 		public void ConfigureServices(IServiceCollection services)
 		{
 			services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
+			services.AddApplicationInsightsTelemetry();
+
+			services.AddCors(options =>
+			{
+				options.AddPolicy("AllowAnything",
+					builder =>
+					{
+						builder.AllowAnyOrigin()
+							.AllowAnyMethod()
+							.AllowAnyHeader();
+					});
+			});
 		}
 
 		// This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -33,6 +44,8 @@ namespace Hovercraft
 			{
 				app.UseHsts();
 			}
+
+			app.UseCors("AllowAnything");
 
 			app.UseHttpsRedirection();
 			app.UseMvc();

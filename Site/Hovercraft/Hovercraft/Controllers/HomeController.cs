@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Hovercraft.Models;
+using Microsoft.AspNetCore.Mvc;
 
 namespace Hovercraft.Controllers
 {
@@ -7,7 +8,19 @@ namespace Hovercraft.Controllers
     {
         public IActionResult Index()
         {
-            return View();
+            return View("Index", GetTimespinnerBossModel());
+        }
+
+        TimespinnerBossModel GetTimespinnerBossModel()
+        {
+	        return new TimespinnerBossModel
+	        {
+		        Bosses = new[]
+		        {
+			        new BossModel {Name = "Varndagroth", Url = "https://www.neoseeker.com/timespinner/Walkthrough/Boss_Varndagroth" },
+			        new BossModel {Name = "Aelana", Url = "https://www.neoseeker.com/timespinner/Walkthrough/Boss_Aelana"}
+		        }
+	        };
         }
     }
 }

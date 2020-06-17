@@ -1,36 +1,41 @@
-﻿@model dynamic
-
-@{
-	Layout = null;
-}
+﻿@model Hovercraft.Models.TimespinnerBossModel
+@{ Layout = null; }
 
 <!DOCTYPE html>
-
 <html>
 <head>
-	<title>title</title>
+	<title>Hovercraft demo page</title>
+	<style>
+		table, th, td {
+			border: 1px solid black;
+		}
+	</style>
 </head>
 <body>
 	<h1>Timespinner Bosses</h1>
+	This page shows a list of bosses from the timespinner game, when you click on boss you are redirected to an external site.
+	<br/>
+	This page was made from scratch for the ilab code games requirement to not use non public code
+	<br/>
+	As you hover over any of the bosses their names, additional information about them is loaded
+	<br/>
+	&nbsp;
+	<br/>
 	<table>
 		<thead>
 			<tr>
-				<td>
+				<th>
 					Name
-				</td>
+				</th>
 			</tr>
 		</thead>
 		<tbody>
-			<tr>
-				<a href="https://www.neoseeker.com/timespinner/Walkthrough/Boss_Aelana">
-					<td>Varndagroth Borealis</td>
-				</a>
+		@foreach (var boss in Model.Bosses)
+		{
+			<tr onClick="document.location.href='@boss.Url';">
+				<td>@boss.Name</td>
 			</tr>
-			<tr>
-				<a href="https://www.neoseeker.com/timespinner/Walkthrough/Boss_Aelana">
-					<td>Aelana Vilete</td>
-				</a>
-			</tr>
+		}
 		</tbody>
 	</table>
 </body>
