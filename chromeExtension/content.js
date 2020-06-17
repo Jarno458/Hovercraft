@@ -19,11 +19,14 @@ function fillTooltip(array) {
 
 		$('body').on("mouseenter", locator,function (e) {
 			$(this).css('position', 'relative');
-			console.log('ENTER');
-			console.log(`${tooltip.lines.map(x => '<span>' + x + '</span>').join(``)}`);
+
 			const position = $(this).offset();
 			position.top += $(this).height() + 20;
-			console.log(position);
+
+			// if element is on the right side
+			if (position.left > 0.85 * window.screen.width) {
+				position.left = position.left - $(this).width();
+			}
 
 			$('body').append(`
 				<div class='HovercraftTooltip'>
@@ -41,7 +44,6 @@ function fillTooltip(array) {
 	 			</div>`).find('.HovercraftTooltip').css({...position, position:'absolute'})
 		});
 		$('body').on("mouseleave", locator,function (e) {
-			console.log('LEAVE');
 			$('body').find('.HovercraftTooltip').remove();
 		});
 	});
