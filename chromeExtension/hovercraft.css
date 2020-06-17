@@ -1,5 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,700);
-body {
+/*body {
     margin: 0;
     padding: 0;
     font-family: "Open Sans", sans-serif;
@@ -28,18 +28,9 @@ p {
     font-size: 1rem;
     line-height: 2;
     margin-top: 2rem;
-}
+}*/
 
-span {
-    border-bottom: 3px solid #67C8EA;
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
-span:hover {
-    background: #A4E1F6;
-}
-
-.Tooltips {
+.HovercraftTooltip {
     position: absolute;
     top: 0;
     left: 0;
@@ -47,7 +38,7 @@ span:hover {
     bottom: 0;
     z-index: 5;
 }
-.Tooltips p {
+.HovercraftTooltip p {
     min-width: 200px;
     opacity: 0;
     display: inline-block;
@@ -65,12 +56,12 @@ span:hover {
     box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.2);
     transition: all 0.2s ease-out;
 }
-.Tooltips p.OnTop {
+.HovercraftTooltip p.OnTop {
     top: -5px;
     left: 50%;
     transform: translate(-50%, -150%);
 }
-.Tooltips p.OnTop:before {
+.HovercraftTooltip p.OnTop:before {
     position: absolute;
     content: "";
     width: 0;
@@ -82,12 +73,12 @@ span:hover {
     margin-left: -8px;
     left: 50%;
 }
-.Tooltips p.OnBottom {
+.HovercraftTooltip p.OnBottom {
     bottom: -15px;
     left: 50%;
     transform: translate(-50%, 150%);
 }
-.Tooltips p.OnBottom:before {
+.HovercraftTooltip p.OnBottom:before {
     position: absolute;
     content: "";
     width: 0;
@@ -99,12 +90,12 @@ span:hover {
     margin-left: -8px;
     left: 50%;
 }
-.Tooltips p.OnLeft {
+.HovercraftTooltip p.OnLeft {
     left: -15px;
     top: -15px;
     transform: translate(-150%, -50%);
 }
-.Tooltips p.OnLeft:before {
+.HovercraftTooltip p.OnLeft:before {
     position: absolute;
     content: "";
     width: 0;
@@ -116,12 +107,12 @@ span:hover {
     margin-top: -8px;
     right: -8px;
 }
-.Tooltips p.OnRight {
+.HovercraftTooltip p.OnRight {
     right: -15px;
     top: -15px;
     transform: translate(150%, -50%);
 }
-.Tooltips p.OnRight:before {
+.HovercraftTooltip p.OnRight:before {
     position: absolute;
     content: "";
     width: 0;
@@ -133,19 +124,19 @@ span:hover {
     margin-top: -8px;
     left: -8px;
 }
-.Tooltips:hover p {
+.HovercraftTooltip:hover p {
     visibility: visible;
     opacity: 1;
 }
-.Tooltips:hover p.OnTop {
+.HovercraftTooltip:hover p.OnTop {
     transform: translate(-50%, -100%);
 }
-.Tooltips:hover p.OnBottom {
+.HovercraftTooltip:hover p.OnBottom {
     transform: translate(-50%, 100%);
 }
-.Tooltips:hover p.OnLeft {
+.HovercraftTooltip:hover p.OnLeft {
     transform: translate(-100%, -50%);
 }
-.Tooltips:hover p.OnRight {
+.HovercraftTooltip:hover p.OnRight {
     transform: translate(100%, -50%);
 }

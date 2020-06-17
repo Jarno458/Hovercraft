@@ -12,6 +12,14 @@
     display: block; /* remove extra space below image */
 }
 
+.hovercraft-header-box{
+    font-weight: bold;
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+
 .hovercraft-txt-box{
+    margin-top: 3px;
+    display: block;
     font-size: 10px;
 }
