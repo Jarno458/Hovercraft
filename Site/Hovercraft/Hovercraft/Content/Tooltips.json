@@ -2,8 +2,8 @@
 	"Websites": [ "localhost", "hovercraft.azurewebsites.net" ],
 	"Tooltips": [{
 		"Locator": "td:contains(\"Varndagroth\")",
-		"Tooltip":  {
-			"IconUrl": "https://www.neoseeker.com/timespinner/File:Timespinner_varndagroth_icon.jpg",
+		"Tooltip": {
+			"IconUrl": "https://cdn.staticneo.com/ew/3/3f/Timespinner_varndagroth_icon.jpg",
 			"Header": "Varndagroth",
 			"Lines": [
 				"Location: Varndagray Metropolis",
@@ -15,7 +15,7 @@
 		}
 	}, {
 		"Locator": "td:contains(\"Aelana\")",
-		"Tooltip":  {
+		"Tooltip": {
 			"IconUrl": "https://cdn.staticneo.com/ew/b/bd/Timespinner_aelana_icon.jpg",
 			"Header": "Aelana",
 			"Lines": [
@@ -75,7 +75,8 @@
 	"Websites": [ "accounting.twinfield.com" ],
 	"Tooltips": [{
 		"Locator": "div .flex-list-container div:contains('Irfan Coleman')",
-		"Tooltip":  {
+		"Tooltip": {
+			"IconUrl": "https://hovercraft.azurewebsites.net/User_font_awesome.svg",
 			"Header": "Irfan Coleman",
 			"Lines": [
 				"Not Here 345",
@@ -87,13 +88,15 @@
 		}
 	}, {
 		"Locator": "div .flex-list-container div:contains('108.000,00')",
-		"Tooltip":  {
+		"Tooltip": {
+			"IconUrl": "https://hovercraft.azurewebsites.net/iconfinder_cash_3827994.png",
 			"Header": "Articles",
 			"Lines": [ "2x Pet Dragon € 54000,00" ]
 		}
 	}, {
 		"Locator": "div .flex-list-container div:contains('Quentin Weaver')",
-		"Tooltip":  {
+		"Tooltip": {
+			"IconUrl": "https://hovercraft.azurewebsites.net/User_font_awesome.svg",
 			"Header": "Quentin Weaver",
 			"Lines": [
 				"Australishestraat 8925",
@@ -104,13 +107,15 @@
 		}
 	}, {
 		"Locator": "div .flex-list-container div:contains('100.000,00')",
-		"Tooltip":  {
+		"Tooltip": {
+			"IconUrl": "https://hovercraft.azurewebsites.net/iconfinder_cash_3827994.png",
 			"Header": "Articles",
 			"Lines": [ "1x WK Code Games Victory € 100000,00" ]
 		}
 	}, {
 		"Locator": "div.flex-list-container div:contains('Leia Mcgregor')",
-		"Tooltip":  {
+		"Tooltip": {
+			"IconUrl": "https://hovercraft.azurewebsites.net/User_font_awesome.svg",
 			"Header": "Leia Mcgregor",
 			"Lines": [
 				"Somewhere Nearby 40",
@@ -122,11 +127,12 @@
 		}
 	}, {
 		"Locator": "div .flex-list-container div:contains('78.050,00')",
-		"Tooltip":  {
+		"Tooltip": {
+			"IconUrl": "https://hovercraft.azurewebsites.net/iconfinder_cash_3827994.png",
 			"Header": "Articles",
 			"Lines": [
-				"1x Electric Car €78.000,00",
-				"5x Pen 50,00" 
+				"1x Electric Car € 78.000,00",
+				"5x Pen € 10,00"
 			]
 		}
 	}]

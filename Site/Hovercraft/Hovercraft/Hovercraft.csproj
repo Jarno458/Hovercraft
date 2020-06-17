@@ -32,10 +32,12 @@
 
   <ItemGroup>
     <None Include="Views\Home\Index.cshtml" />
+    <None Include="wwwroot\iconfinder_cash_3827994.png" />
+    <None Include="wwwroot\User_font_awesome.svg" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="wwwroot\" />
+    <Folder Include="Content\Icons\" />
   </ItemGroup>
 
   <ItemGroup>

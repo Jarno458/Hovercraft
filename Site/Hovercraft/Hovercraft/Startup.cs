@@ -45,6 +45,8 @@ namespace Hovercraft
 				app.UseHsts();
 			}
 
+			app.UseStaticFiles();
+
 			app.UseCors("AllowAnything");
 
 			app.UseHttpsRedirection();
