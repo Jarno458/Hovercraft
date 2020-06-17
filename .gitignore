@@ -26,3 +26,6 @@ _ReSharper*/
 # Other
 *.bak
 *.tmp
+
+# Webstorm
+*.idea/g
