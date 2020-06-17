@@ -1,4 +1,4 @@
-﻿namespace Hovercraft.Controllers
+﻿namespace Hovercraft.Models
 {
 	public class TooltipModel
 	{

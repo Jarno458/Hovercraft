@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using Hovercraft.Models;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Hovercraft.Controllers
@@ -16,10 +17,15 @@ namespace Hovercraft.Controllers
 
 		IEnumerable<TooltipLocatorModel> GetTooltip(string website)
 		{
-			return GetDummyCustomerTooltips();
+			if(website.Contains("hovercraft.azurewebsites.net"))
+				return GetDummyPageTooltips();
+			if (website.Contains("ospokolenko.wixsite.com/nonsense"))
+				return GetOspokolenkoWixSiteTooltips();
+
+			return new TooltipLocatorModel[0];
 		}
 
-		IEnumerable<TooltipLocatorModel> GetDummyCustomerTooltips()
+		IEnumerable<TooltipLocatorModel> GetDummyPageTooltips()
 		{
 			return new[]
 			{
@@ -45,13 +51,31 @@ namespace Hovercraft.Controllers
 					Tooltip = new TooltipModel
 					{
 						IconUrl = "https://www.neoseeker.com/timespinner/File:Timespinner_aelana_icon.jpg",
-						Header = "Varndagroth Borealis",
+						Header = "Aelana Vilete",
 						Lines = new []
 						{
-							"Royal Tower 1",
+							"Royal Towers 1",
 							"457753 RYL Vilete",
 							"https://www.neoseeker.com/timespinner/Walkthrough/Boss_Aelana"
 
+						}
+					}
+				}
+			};
+		}
+
+		IEnumerable<TooltipLocatorModel> GetOspokolenkoWixSiteTooltips()
+		{
+			return new[]
+			{
+				new TooltipLocatorModel
+				{
+					Locator = @"//*[@id=""comp-kbj2wv741linkElement""] id=""comp-kbj2wv741label""",
+					Tooltip = new TooltipModel
+					{
+						Lines = new []
+						{
+							"Join the most forward-thinking accountants and let them share the experience"
 						}
 					}
 				}
