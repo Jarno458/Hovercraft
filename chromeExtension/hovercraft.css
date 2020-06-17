@@ -48,7 +48,7 @@ span:hover {
     z-index: 5;
 }
 .Tooltips p {
-    min-width: 100px;
+    min-width: 200px;
     opacity: 0;
     display: inline-block;
     visibility: hidden;
