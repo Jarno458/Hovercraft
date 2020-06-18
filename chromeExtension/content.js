@@ -24,17 +24,21 @@ function fillTooltip(array) {
 
 			$('body').append(`
 				<div class='HovercraftTooltip'>
-					<p class='OnTop' style='color:${textColor};background:${backgroundColor}'>
-	 					<span class="hovercraft-img-box">
-    						<img src="${tooltip.iconUrl || baseImageUrl}" />
-						</span>
-						<span class="hovercraft-header-box">
-							${tooltip.header ? tooltip.header : ''}
-						</span>
-						<span class="hovercraft-txt-box">
-							${tooltip.lines.map(x => '<span>' + x + '</span>').join('<br/>')}
-						</span>
-	 				</p>
+					<div class='table-row' style='background:${backgroundColor}'>
+						<div class='table-cell' style='color:${textColor};background:${backgroundColor}'>
+							<span class="hovercraft-img-box">
+								<img src="${tooltip.iconUrl || baseImageUrl}" />
+							</span>
+						</div>
+						<div class='table-cell' style='color:${textColor};background:${backgroundColor}'>
+							<span class="hovercraft-header-box">
+								${tooltip.header ? tooltip.header : ''}
+							</span>
+							<span class="hovercraft-txt-box">
+								${tooltip.lines.map(x => '<span>' + x + '</span>').join('<br/>')}
+							</span>
+						</div>
+					</div> 
 	 			</div>`).find('.HovercraftTooltip').css({...position, position:'absolute'})
 		});
 		$('body').on("mouseleave", locator,function (e) {
