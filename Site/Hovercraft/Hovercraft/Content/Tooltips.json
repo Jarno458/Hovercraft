@@ -70,7 +70,10 @@
 		"TextColor":  "#FFFFFF", 
 		"Tooltip":  {
 			"Header": "Blog",
-			"Lines": [ "Join the most forward-thinking accountants and let them share the experience" ]
+			"Lines": [
+				"Join the most forward-thinking accountants",
+				"and let them share the experience"
+			]
 		}
 	}, {
 		"Locator": "#comp-kbjc9eya4label",
