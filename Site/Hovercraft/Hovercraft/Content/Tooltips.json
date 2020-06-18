@@ -2,7 +2,7 @@
 	"Websites": [ "localhost", "hovercraft.azurewebsites.net" ],
 	"Tooltips": [{
 		"Locator": "td:contains(\"Varndagroth\")",
-		"BackgroundColor": "#FF0000",//"#67C8EA",
+		"BackgroundColor": "#67C8EA",
 		"TextColor":  "#FFFFFF", 
 		"Tooltip": {
 			"IconUrl": "https://cdn.staticneo.com/ew/3/3f/Timespinner_varndagroth_icon.jpg",

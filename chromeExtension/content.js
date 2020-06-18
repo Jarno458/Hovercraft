@@ -23,8 +23,8 @@ function fillTooltip(array) {
 			}
 
 			$('body').append(`
-				<div class='HovercraftTooltip' style='color:${textColor};background:${backgroundColor}'>
-					<p class='OnTop'>
+				<div class='HovercraftTooltip'>
+					<p class='OnTop' style='color:${textColor};background:${backgroundColor}'>
 	 					<span class="hovercraft-img-box">
     						<img src="${tooltip.iconUrl || baseImageUrl}" />
 						</span>
