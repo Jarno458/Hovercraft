@@ -28,4 +28,4 @@ _ReSharper*/
 *.tmp
 
 # Webstorm
-*.idea/g
+.idea/
