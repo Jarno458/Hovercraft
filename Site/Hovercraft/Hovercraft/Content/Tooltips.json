@@ -2,6 +2,8 @@
 	"Websites": [ "localhost", "hovercraft.azurewebsites.net" ],
 	"Tooltips": [{
 		"Locator": "td:contains(\"Varndagroth\")",
+		"BackgroundColor": "#FF0000",//"#67C8EA",
+		"TextColor":  "#FFFFFF", 
 		"Tooltip": {
 			"IconUrl": "https://cdn.staticneo.com/ew/3/3f/Timespinner_varndagroth_icon.jpg",
 			"Header": "Varndagroth",
@@ -15,6 +17,8 @@
 		}
 	}, {
 		"Locator": "td:contains(\"Aelana\")",
+		"BackgroundColor": "#67C8EA",
+		"TextColor":  "#FFFFFF", 
 		"Tooltip": {
 			"IconUrl": "https://cdn.staticneo.com/ew/b/bd/Timespinner_aelana_icon.jpg",
 			"Header": "Aelana",
@@ -31,41 +35,55 @@
 	"Websites": [ "ospokolenko.wixsite.com/nonsense" ],
 	"Tooltips": [{
 		"Locator": "#comp-kbj2wv741label",
+		"BackgroundColor": "#67C8EA",
+		"TextColor":  "#FFFFFF", 
 		"Tooltip":  {
 			"Lines": [ "Join the most forward-thinking accountants and let them share the experience" ]
 		}
 	}, {
 		"Locator": "#comp-kbjc9eya0label",
+		"BackgroundColor": "#67C8EA",
+		"TextColor":  "#FFFFFF", 
 		"Tooltip":  {
 			"Header": "Home",
 			"Lines": [ "Here you can find out all latest accounting information" ]
 		}
 	}, {
 		"Locator": "#comp-kbjc9eya1linkElement",
+		"BackgroundColor": "#67C8EA",
+		"TextColor":  "#FFFFFF", 
 		"Tooltip":  {
 			"Header": "Donation",
 			"Lines": [ "If you feel inspired about our web-site, you are welcome to help us" ]
 		}
 	}, {
 		"Locator": "#comp-kbjc9eya2label",
+		"BackgroundColor": "#67C8EA",
+		"TextColor":  "#FFFFFF", 
 		"Tooltip":  {
 			"Header": "About",
 			"Lines": [ "The story about our members" ]
 		}
 	}, {
 		"Locator": "#comp-kbjc9eya3label",
+		"BackgroundColor": "#67C8EA",
+		"TextColor":  "#FFFFFF", 
 		"Tooltip":  {
 			"Header": "Blog",
 			"Lines": [ "Join the most forward-thinking accountants and let them share the experience" ]
 		}
 	}, {
 		"Locator": "#comp-kbjc9eya4label",
+		"BackgroundColor": "#67C8EA",
+		"TextColor":  "#FFFFFF", 
 		"Tooltip":  {
 			"Header": "Yelp Review",
 			"Lines": [ "Check comments and starts on Yelp" ]
 		}
 	}, {
 		"Locator": "#comp-kbjc9eya5label",
+		"BackgroundColor": "#67C8EA",
+		"TextColor":  "#FFFFFF", 
 		"Tooltip":  {
 			"Header": "Knowledge Base",
 			"Lines": [ "Check out the accounting syllabus" ]
@@ -73,8 +91,12 @@
 	}]
 }, {
 	"Websites": [ "accounting.twinfield.com" ],
+	"BackgroundColor": "#67C8EA",
+	"TextColor":  "#FFFFFF", 
 	"Tooltips": [{
 		"Locator": "div .flex-list-container div:contains('Irfan Coleman')",
+		"BackgroundColor": "#67C8EA",
+		"TextColor":  "#FFFFFF", 
 		"Tooltip": {
 			"IconUrl": "https://hovercraft.azurewebsites.net/User_font_awesome.svg",
 			"Header": "Irfan Coleman",
@@ -88,6 +110,8 @@
 		}
 	}, {
 		"Locator": "div .flex-list-container div:contains('108.000,00')",
+		"BackgroundColor": "#67C8EA",
+		"TextColor":  "#FFFFFF", 
 		"Tooltip": {
 			"IconUrl": "https://hovercraft.azurewebsites.net/iconfinder_cash_3827994.png",
 			"Header": "Articles",
@@ -98,6 +122,8 @@
 		}
 	}, {
 		"Locator": "div .flex-list-container div:contains('Quentin Weaver')",
+		"BackgroundColor": "#67C8EA",
+		"TextColor":  "#FFFFFF", 
 		"Tooltip": {
 			"IconUrl": "https://hovercraft.azurewebsites.net/User_font_awesome.svg",
 			"Header": "Quentin Weaver",
@@ -110,6 +136,8 @@
 		}
 	}, {
 		"Locator": "div .flex-list-container div:contains('100.000,00')",
+		"BackgroundColor": "#67C8EA",
+		"TextColor":  "#FFFFFF", 
 		"Tooltip": {
 			"IconUrl": "https://hovercraft.azurewebsites.net/iconfinder_cash_3827994.png",
 			"Header": "Articles",
@@ -120,6 +148,8 @@
 		}
 	}, {
 		"Locator": "div.flex-list-container div:contains('Leia Mcgregor')",
+		"BackgroundColor": "#67C8EA",
+		"TextColor":  "#FFFFFF", 
 		"Tooltip": {
 			"IconUrl": "https://hovercraft.azurewebsites.net/User_font_awesome.svg",
 			"Header": "Leia Mcgregor",
@@ -133,6 +163,8 @@
 		}
 	}, {
 		"Locator": "div .flex-list-container div:contains('78.050,00')",
+		"BackgroundColor": "#67C8EA",
+		"TextColor":  "#FFFFFF", 
 		"Tooltip": {
 			"IconUrl": "https://hovercraft.azurewebsites.net/iconfinder_cash_3827994.png",
 			"Header": "Articles",

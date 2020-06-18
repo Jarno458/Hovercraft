@@ -2,20 +2,14 @@ const website = location.href;
 async function getHovercraft(website) {
 	const resp = await fetch(`https://hovercraft.azurewebsites.net/api/tooltips?website=${website}`);
 
-	const data = await resp.json();
-
-	// const data = [{"locator":"div .flex-list-container div:contains(\"tst\")","tooltip":{"iconUrl":null,"header":"Varndagroth","lines":["Location: Varndagray Metropolis","HP: 800","Exp: 100","Strong vs: Dark","Weak vs: Fire, Ice, Light"]}},{"locator":"td:contains(\"Aelana\")","tooltip":{"iconUrl":"https://www.neoseeker.com/timespinner/File:Timespinner_aelana_icon.jpg","header":"Aelana","lines":["Location: Royal Towers","HP: 2250","Exp: 300","Strong vs: Lightning ","Weak vs: Aura, Dark"]}}]
-	return data;
+	return await resp.json();
 }
 
 function fillTooltip(array) {
 	const baseImageUrl = 'https://i.imgur.com/IDpU5PH.jpg';
 
 	array.forEach((value) => {
-		const {locator, tooltip} = value;
-
-		// Initialize
-		// var Tooltips = $(locator);
+		const {locator, backgroundColor, textColor, tooltip} = value;
 
 		$('body').on("mouseenter", locator,function (e) {
 			$(this).css('position', 'relative');
@@ -29,7 +23,7 @@ function fillTooltip(array) {
 			}
 
 			$('body').append(`
-				<div class='HovercraftTooltip'>
+				<div class='HovercraftTooltip' style='color:${textColor};background:${backgroundColor}'>
 					<p class='OnTop'>
 	 					<span class="hovercraft-img-box">
     						<img src="${tooltip.iconUrl || baseImageUrl}" />

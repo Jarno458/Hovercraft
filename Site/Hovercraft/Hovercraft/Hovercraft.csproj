@@ -6,6 +6,13 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Content\Icons\**" />
+    <Content Remove="Content\Icons\**" />
+    <EmbeddedResource Remove="Content\Icons\**" />
+    <None Remove="Content\Icons\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.ApplicationInsights.AspNetCore" Version="2.12.0" />
     <PackageReference Include="Microsoft.AspNetCore" Version="2.1.7" />
     <PackageReference Include="Microsoft.AspNetCore.HttpsPolicy" Version="2.1.1" />
@@ -34,10 +41,6 @@
     <None Include="Views\Home\Index.cshtml" />
     <None Include="wwwroot\iconfinder_cash_3827994.png" />
     <None Include="wwwroot\User_font_awesome.svg" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Content\Icons\" />
   </ItemGroup>
 
   <ItemGroup>
