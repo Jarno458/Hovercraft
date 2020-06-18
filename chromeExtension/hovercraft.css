@@ -1,34 +1,4 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,700);
-/*body {
-    margin: 0;
-    padding: 0;
-    font-family: "Open Sans", sans-serif;
-    font-weight: 300;
-    font-size: 16px;
-    position: relative;
-    text-align: center;
-    color: #494949;
-}
-
-section {
-    width: 400px;
-    margin: 90px auto;
-}
-
-h1 {
-    display: inline-block;
-    font-weight: 700;
-    font-size: 2rem;
-    line-height: 2.8rem;
-    border-bottom: 5px solid #67C8EA;
-}
-
-p {
-    text-align: left;
-    font-size: 1rem;
-    line-height: 2;
-    margin-top: 2rem;
-}*/
 
 .HovercraftTooltip {
     font-family: "Open Sans", sans-serif;
@@ -39,6 +9,7 @@ p {
     /* left: 0; */
     z-index: 999999;
 }
+
 .HovercraftTooltip p {
     min-width: 200px;
     opacity: 0;
@@ -57,110 +28,13 @@ p {
     box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.2);
     transition: all 0.2s ease-out;
 }
+
 .HovercraftTooltip p.OnTop {
     top: -5px;
     left: 50%;
 }
-/*.HovercraftTooltip p.OnTop {
-    top: -5px;
-    left: 50%;
-    transform: translate(-50%, -150%);
-}*/
-/*
-.HovercraftTooltip p.OnTop:before {
-    position: absolute;
-    content: "";
-    width: 0;
-    height: 0;
-    border-top: 8px solid #67C8EA;
-    border-left: 8px solid transparent;
-    border-right: 8px solid transparent;
-    bottom: -8px;
-    margin-left: -8px;
-    left: 50%;
-}
-.HovercraftTooltip p.OnBottom {
-    bottom: -15px;
-    left: 50%;
-    transform: translate(-50%, 150%);
-}
-.HovercraftTooltip p.OnBottom:before {
-    position: absolute;
-    content: "";
-    width: 0;
-    height: 0;
-    border-bottom: 8px solid #67C8EA;
-    border-left: 8px solid transparent;
-    border-right: 8px solid transparent;
-    top: -8px;
-    margin-left: -8px;
-    left: 50%;
-}
-.HovercraftTooltip p.OnLeft {
-    left: -15px;
-    top: -15px;
-    transform: translate(-150%, -50%);
-}
-.HovercraftTooltip p.OnLeft:before {
-    position: absolute;
-    content: "";
-    width: 0;
-    height: 0;
-    border-left: 8px solid #67C8EA;
-    border-top: 8px solid transparent;
-    border-bottom: 8px solid transparent;
-    top: 50%;
-    margin-top: -8px;
-    right: -8px;
-}
-.HovercraftTooltip p.OnRight {
-    right: -15px;
-    top: -15px;
-    transform: translate(150%, -50%);
-}
-.HovercraftTooltip p.OnRight:before {
-    position: absolute;
-    content: "";
-    width: 0;
-    height: 0;
-    border-right: 8px solid #67C8EA;
-    border-top: 8px solid transparent;
-    border-bottom: 8px solid transparent;
-    top: 50%;
-    margin-top: -8px;
-    left: -8px;
-}
-/*.HovercraftTooltip:hover p {*/
-/*    visibility: visible;*/
-/*    opacity: 1;*/
-/*}*/
-/*.HovercraftTooltip:hover p.OnTop {*/
-/*    transform: translate(-50%, -100%);*/
-/*}*/
-/*.HovercraftTooltip:hover p.OnBottom {*/
-/*    transform: translate(-50%, 100%);*/
-/*}*/
-/*.HovercraftTooltip:hover p.OnLeft {*/
-/*    transform: translate(-100%, -50%);*/
-/*}*/
-/*.HovercraftTooltip:hover p.OnRight {*/
-/*    transform: translate(100%, -50%);*/
-/*}*/
 
 .HovercraftTooltip p {
     visibility: visible;
     opacity: 1;
 }
-/*
-.HovercraftTooltip p.OnTop {
-    transform: translate(-50%, -100%);
-}
-.HovercraftTooltip p.OnBottom {
-    transform: translate(-50%, 100%);
-}
-.HovercraftTooltip p.OnLeft {
-    transform: translate(-100%, -50%);
-}
-.HovercraftTooltip p.OnRight {
-    transform: translate(100%, -50%);
-}*/
