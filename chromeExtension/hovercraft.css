@@ -38,3 +38,7 @@
     visibility: visible;
     opacity: 1;
 }
+
+.HovercraftTooltips span {
+    white-space:nowrap;
+}
