@@ -91,7 +91,10 @@
 		"Tooltip": {
 			"IconUrl": "https://hovercraft.azurewebsites.net/iconfinder_cash_3827994.png",
 			"Header": "Articles",
-			"Lines": [ "2x Pet Dragon € 54000,00" ]
+			"Lines": [ 
+				"2x Pet Dragon € 54000,00",
+				"Total VAT: € 0,00"
+			 ]
 		}
 	}, {
 		"Locator": "div .flex-list-container div:contains('Quentin Weaver')",
@@ -110,7 +113,10 @@
 		"Tooltip": {
 			"IconUrl": "https://hovercraft.azurewebsites.net/iconfinder_cash_3827994.png",
 			"Header": "Articles",
-			"Lines": [ "1x WK Code Games Victory € 100000,00" ]
+			"Lines": [ 
+				"1x WK Code Games Victory € 100000,00",
+				"Total VAT: € 0,00"
+			]
 		}
 	}, {
 		"Locator": "div.flex-list-container div:contains('Leia Mcgregor')",
@@ -132,7 +138,8 @@
 			"Header": "Articles",
 			"Lines": [
 				"1x Electric Car € 78.000,00",
-				"5x Pen € 10,00"
+				"5x Pen € 10,00",
+				"Total VAT: € 0,00"
 			]
 		}
 	}]
